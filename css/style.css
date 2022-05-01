@@ -1,0 +1,531 @@
+/* RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Special+Elite&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+ul,
+li {
+    list-style-type: none;
+    list-style: none;
+}
+
+body {
+    background-color: #004f9e;
+    font-family: 'Scheherazade New', serif;
+}
+
+#mainNav {
+    position: fixed;
+    width: 100vw;
+    padding: 10px 30px;
+    height: 80px;
+    display: flex;
+    box-shadow: 5px 5px 60px rgba(110, 100, 2, 0.123);
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2dc79;
+}
+
+.nav {
+    display: flex;
+    font-family: 'Scheherazade New', serif;
+}
+
+.nav li {
+    margin-top: 5px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #0070E0;
+    font-weight: 700;
+    margin: 0 10px;
+}
+
+.linha {
+    height: 0.5px;
+    margin: 0 0 0 10px;
+    width: auto;
+    background-color: #0070e000;
+    transition: background 1s cubic-bezier(0.42, 0.0, 0.58, 2);
+}
+
+.linha:hover {
+    height: 0.5px;
+    margin: 0 0 0 10px;
+    width: auto;
+    background: #0070E0;
+}
+
+.nav button {
+    margin: 0 10px;
+    width: 90px;
+    height: 30px;
+    background-color: #0070E0;
+    border: 2px solid #0070E0;
+    transition: border 0.5s cubic-bezier(0.42, 0.0, 0.58, 2);
+}
+
+.nav button a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav button:hover {
+    border: 2px solid #3a99f8;
+}
+
+.nav button:active {
+    border: 2px solid #74baff;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+@media (min-width: 1025px) {
+    .main-div {
+        padding-top: 80px;
+        display: flex;
+        margin: 0 3vw;
+    }
+    .div-texto {
+        padding: 0 20px;
+        width: 40vw;
+    }
+    .form {
+        margin-top: 30px;
+        position: fixed;
+        transition: 1s;
+        left: 51%;
+        width: 45vw;
+        
+        background-color: whitesmoke;
+        border: 1px solid #1389ff7e;
+        box-shadow: 5px 5px 10px rgba(110, 99, 2, 0.363);
+    }
+    .form:hover {
+        border: 1px solid #a2d0ff;
+        box-shadow: 5px 5px 20px rgba(110, 99, 2, 0.363);
+    }
+    .blockquote1 {
+        color: #f2dc79;
+        padding: 10px 30px;
+    }
+    .blockquote1 h1 {
+        color: #f2dc79;
+        text-align: left;
+        font-size: 3rem;
+        font-weight: 700;
+        padding: 15px 0;
+    }
+    .blockquote1 p {
+        color: #f2dc79;
+        font-weight: 600;
+        text-align: justify;
+        padding: 5px 0;
+    }
+    .blockquote1 span {
+        font-weight: 600;
+        font-size: 0.75rem;
+        padding: 5px 0;
+    }
+    .info span {
+        font-weight: bold;
+        color: #96c9fd;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+    }
+    .linha1 {
+        margin: 10px auto;
+        height: 0.5px;
+        width: 40vw;
+        background-color: #3a99f8;
+    }
+    .ads {
+        margin: 0 auto;
+        height: 150px;
+        width: 200px;
+        background-color: whitesmoke;
+    }
+    .form h3 {
+        font-size: 0.8rem;
+        color: #3a99f8;
+        padding: 5px 10px;
+        font-family: 'Inconsolata', monospace;
+    }
+    .form-control {
+        color: #3d3d3d;
+        border: 1px solid #0070e023;
+        font-size: small;
+        font-family: 'Inconsolata', monospace;
+        display: block;
+        margin: 10px auto;
+        width: 95%;
+        height: 10px;
+        padding: 0px 10px;
+    }
+    #inputEmail {
+        height: 23px;
+        margin: 0 auto;
+    }
+    .data {
+        margin: 0 0 0 5px;
+        display:flex;
+    }
+    .bttn {
+        margin: 5px;
+        background-color: whitesmoke;
+        border: 1px solid #0070e023;
+        padding: 9px;
+        transition: 0.5s cubic-bezier(0.42, 0.0, 0.58, 2);
+        text-decoration: none;
+        color: #0070e09d;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: 'Inconsolata', monospace;
+    }
+    .bttn:active {
+        background-color: #0070E0;
+        color: whitesmoke;
+    }
+    .choose {
+        text-decoration: none;
+        color: #0070e09d;
+        font-size: 0.8rem;
+        text-transform: lowercase;
+        font-family: 'Inconsolata', monospace;
+    }
+    .bttn-enviar {
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+        width: 95%;
+        height: 30px;
+        background-color: #0070E0;
+        border: 1px solid #0070E0;
+        padding: 5px;
+        transition: 1s cubic-bezier(0.42, 0.0, 0.58, 2);
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+        font-family: 'Inconsolata', monospace;
+    }
+    .bttn-enviar:hover,
+    .bttn-enviar:active {
+        background-color: #3a99f8;
+        border: 1px solid #3679bd;
+    }
+    /* REGISTRAR */
+    .form-reg {
+        top: 20%;
+        left: 25%;
+        position: fixed;
+        transition: 1s;
+        display: block;
+        width: 45vw;
+        height: inherit;
+        background-color: whitesmoke;
+        border: 1px solid #1389ff7e;
+        box-shadow: 5px 5px 10px rgba(110, 99, 2, 0.363);
+    }
+    .form-reg:hover {
+        border: 1px solid #a2d0ff;
+        box-shadow: 5px 5px 20px rgba(110, 99, 2, 0.363);
+    }
+    .form-reg h3 {
+        font-size: 0.8rem;
+        color: #3a99f8;
+        padding: 5px 10px;
+        font-family: 'Inconsolata', monospace;
+    }
+}
+
+@media (max-width: 1024px) {
+    #btn-mobile {
+        display: block;
+    }
+    #mainNav {
+        height: 75px;
+    }
+    .nav {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #F2DC79;
+        z-index: 1000;
+        height: 0vh;
+        transition: 1s;
+        visibility: collapse;
+        overflow-y: hidden;
+    }
+    .nav li {
+        padding: 30px 0 50px 0;
+        width: 100vw;
+        text-align: center;
+        background-color: #f5e4a3;
+        border-bottom: 1.5px solid #0070E0;
+    }
+    .nav button {
+        margin: 5px;
+    }
+    #mainNav.active .nav {
+        visibility: visible;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 70px);
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .linha:hover {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer {
+        display: block;
+        border-top: 2px solid #0070E0;
+        width: 20px;
+    }
+    #hamburguer::after,
+    #hamburguer::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 20px;
+        background-color: #0070E0;
+        margin-top: 3px;
+    }
+    #hamburguer:active {
+        display: block;
+        border-top: 2px solid #0070E0;
+        width: 20px;
+    }
+    #hamburguer.active::after,
+    #hamburguer.active::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 20px;
+        background-color: #0070E0;
+        margin-top: 5px;
+    }
+    /* CONTEUDO */
+    .main-div {
+        padding-top: 60px;
+        width: 100vw;
+        height: calc(50vh - 70px);
+    }
+    .blockquote1 {
+        color: #f2dc79;
+        padding: 10px 30px;
+    }
+    .blockquote1 h1 {
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 15px 0;
+    }
+    .blockquote1 p {
+        font-weight: 600;
+        text-align: justify;
+        padding: 5px 0;
+    }
+    .blockquote1 span {
+        padding: 5px 0;
+    }
+    .info span {
+        color: #96c9fd;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+    }
+    .linha1 {
+        margin: 10px auto;
+        height: 2px;
+        width: 90vw;
+        background-color: #3a99f8;
+    }
+    .ads {
+        display: none;
+    }
+    .form {
+        border: 1px solid #3a99f8;
+        transition: 3s;
+        padding: 10px;
+        width: 90vw;
+        height: auto;
+        background-color: whitesmoke;
+        margin: 30px auto;
+    }
+    .form:hover {
+        border: 1px solid #a2d0ff;
+    }
+    .form h3 {
+        color: #3a99f8;
+        padding: 10px;
+        font-family: 'Inconsolata', monospace;
+    }
+    .form-control {
+        color: #3d3d3d;
+        font-family: 'Inconsolata', monospace;
+        display: block;
+        margin: 10px auto 20px auto;
+        width: 80vw;
+        padding: 10px;
+    }
+    .data {
+        margin: 0 0 0 5px;
+    }
+    .bttn {
+        margin: 5px;
+        width: 90px;
+        height: 30px;
+        background-color: whitesmoke;
+        border: 1px solid #0070E0;
+        padding: 5px;
+        transition: 0.5s cubic-bezier(0.42, 0.0, 0.58, 2);
+        text-decoration: none;
+        color: #0070E0;
+        font-size: 0.8rem;
+        font-family: 'Inconsolata', monospace;
+    }
+    .bttn:active {
+        background-color: #0070E0;
+        color: whitesmoke;
+    }
+    .choose {
+        text-decoration: none;
+        color: #0070E0;
+        font-size: 0.8rem;
+        text-transform: lowercase;
+        font-family: 'Inconsolata', monospace;
+    }
+    .bttn-enviar {
+        display: block;
+        text-align: center;
+        margin: 5px auto;
+        width: 80vw;
+        height: 30px;
+        background-color: #0070E0;
+        border: 1px solid #0070E0;
+        padding: 5px;
+        transition: 1s cubic-bezier(0.42, 0.0, 0.58, 2);
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+        font-family: 'Inconsolata', monospace;
+    }
+    .bttn-enviar:hover,
+    .bttn-enviar:active {
+        background-color: #3a99f8;
+        border: 1px solid #3679bd;
+    }
+    /* REGISTRAR */
+    .form-reg {
+        border: 1px solid #3a99f8;
+        transition: 3s;
+        padding-top: 100px;
+        width: 100vw;
+        height: 100vh;
+        background-color: whitesmoke;
+
+        
+    
+    }
+    .form-reg:hover {
+        border: 1px solid #a2d0ff;
+        box-shadow: 5px 5px 20px rgba(110, 99, 2, 0.363);
+    }
+    .form-reg h3 {
+        font-size: 0.8rem;
+        color: #3a99f8;
+        padding: 5px 10px;
+        font-family: 'Inconsolata', monospace;
+    }
+}
+
+
+/* ini: Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #004F9E;
+    /* cor do background que vai ocupar o body */
+    z-index: 999;
+    /* z-index para jogar para frente e sobrepor tudo */
+}
+
+#preloader .inner {
+    position: absolute;
+    top: 50%;
+    /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loader {
+    margin-left: 30px;
+    border: 1px solid #96c9fd;
+    width: 100px;
+    height: 100px;
+    animation: spin 5s infinite cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 50%;
+    box-shadow: 0 0 10px #96c9fd;
+}
+
+.bolinha {
+    width: 20px;
+    height: 20px;
+    background-color: #f2dc79;
+    position: relative;
+    left: 10%;
+    z-index: 1000;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* end: Preloader */
